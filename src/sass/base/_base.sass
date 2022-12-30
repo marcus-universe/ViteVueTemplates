@@ -4,6 +4,11 @@ $white: #eee
 $padding_1: 1rem
 $padding_2: 2rem
 
+//Responsive
+$phone: 640px
+$tablet: 1280px
+$desktop: 1600px
+
 \:root
     --prime_color: hsl(189, 100%, 58%)
     --prime_color_hover: hsl(189, 100%, 88%)
@@ -24,15 +29,32 @@ $padding_2: 2rem
     --topbar_height: 20px
 
 ::-webkit-scrollbar
-    width: 0.5rem
-    height: 0.2rem
+    width: 1rem
+    min-width: 8px
+    max-width: 8px
+    height: 1rem
+    min-height: 8px
+    max-height: 8px
 
 ::-webkit-scrollbar-thumb
     background: var(--prime_color)
-    border-radius: 20px
+    transition: background 0.3s ease
+    border-radius: 1rem
+    transition: all 0.3s ease
 
 ::-webkit-scrollbar-track
     background: var(--bg_color)
+    transition: background 0.3s ease
+    width: 1rem
+    min-width: 8px
+    max-width: 8px
+    height: 1rem
+    min-height: 8px
+    max-height: 8px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+    filter: brightness(1.6)
 
 *,
 *::before,
@@ -46,6 +68,7 @@ $padding_2: 2rem
     background-color: var(--bg_color)
     margin: 0
     padding: 0
+    width: 100%
     font-family: $font
     line-height: 1.6
     box-sizing: border-box

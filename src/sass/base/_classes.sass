@@ -30,6 +30,12 @@
 .align_c
     align-items: center
 
+.align_start
+    align-items: flex-start
+
+.align_stretch
+    align-items: stretch
+
 .flex_start
     justify-content: flex-start
 
@@ -42,11 +48,22 @@
 .flex_space_around
     justify-content: space-around
 
+.flex_inline
+    display: inline-flex
+
 .gap1
     gap: $padding_1
 
 .gap2
     gap: $padding_2
+
+.invertX
+    transform: scaleX(-1)
+.invertY
+    transform: scaleY(-1)
+
+.border_round_1
+    border-radius: 1rem
 
 .w100
     width: 100%
@@ -97,6 +114,7 @@ h2
 a
     text-decoration: none
     color: var(--prime_color)
+    display: block
     &:hover
         color: var(--prime_color_hover)
 
