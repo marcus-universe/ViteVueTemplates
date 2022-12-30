@@ -1,0 +1,55 @@
+@use 'fonts' as *
+
+$white: #eee
+$padding_1: 1rem
+$padding_2: 2rem
+
+\:root
+    --prime_color: hsl(189, 100%, 58%)
+    --prime_color_hover: hsl(189, 100%, 88%)
+    --second_color: hsl(303, 100%, 51%)
+    --second_color_hover: hsl(303, 100%, 81%)
+    --error_color: hsl(0, 91%, 70%)
+    --bg_color: #222831
+
+    --icon_size: 2.5rem
+    --icon_min_size: 30px
+
+    --font_size_1: clamp(1.8rem, 1.5vw, 3rem)
+    --font_size_2: clamp(1.5rem, 1.5vw, 2.5rem)
+    --font_size_3: clamp(1.2rem, 1.5vw, 2rem)
+    --font_size_4: clamp(1rem, 1.5vw, 1.5rem)
+
+    --btn_width: 12rem
+    --topbar_height: 20px
+
+::-webkit-scrollbar
+    width: 0.5rem
+    height: 0.2rem
+
+::-webkit-scrollbar-thumb
+    background: var(--prime_color)
+    border-radius: 20px
+
+::-webkit-scrollbar-track
+    background: var(--bg_color)
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+    margin: 0
+    position: relative
+    font-weight: normal
+
+*, html, body
+    background-color: var(--bg_color)
+    margin: 0
+    padding: 0
+    font-family: $font
+    line-height: 1.6
+    box-sizing: border-box
+    scrollbar-gutter: stable
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale

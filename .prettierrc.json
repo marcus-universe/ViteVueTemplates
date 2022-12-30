@@ -1,0 +1,15 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "bracketSameLine": true,
+
+    "overrides": [{
+        "files": "*.sass",
+        "options": {
+            "semi": false
+        }
+    }]
+}

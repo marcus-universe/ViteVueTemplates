@@ -1,0 +1,117 @@
+@use 'base' as *
+@use 'fonts' as *
+
+// ########################################
+// Align Classes
+// ########################################
+
+.flex_c_h
+    display: flex
+    justify-content: center
+    flex-direction: row
+
+.flex_c_v
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+.flex_c
+    display: flex
+    justify-content: center
+    align-items: center
+
+.flex_wrap
+    flex-wrap: wrap
+
+.grid_c
+    display: grid
+    place-items: center
+
+.align_c
+    align-items: center
+
+.flex_start
+    justify-content: flex-start
+
+.flex_space_between
+    justify-content: space-between
+
+.flex_space_evenly
+    justify-content: space-evenly
+
+.flex_space_around
+    justify-content: space-around
+
+.gap1
+    gap: $padding_1
+
+.gap2
+    gap: $padding_2
+
+.w100
+    width: 100%
+
+// ########################################
+// Transition Classes
+// ########################################
+
+.fade-enter-active, .fade-leave-active
+    transition: all 0.2s ease
+
+.fade-enter-from, .fade-leave-to
+    opacity: 0
+
+.slideIn-enter-active, .slideIn-leave-active
+    transition: all 0.2s ease
+.slideIn-enter-from, .slideIn-leave-to
+    transform: translateX(-10%)
+    opacity: 0
+    z-index: 1
+
+// ########################################
+// Font Classes
+// ########################################
+.text1
+    font-family: $font
+    font-size: var(--font_size_3)
+    color: $white
+
+.text2
+    font-family: $font
+    font-size: var(--font_size_4)
+    color: $white
+
+.text_center
+    text-align: center
+
+h1
+    font-family: $font
+    font-size: var(--font_size_1)
+    color: var(--prime_color)
+
+h2
+    font-family: $font
+    font-size: var(--font_size_2)
+    color: var(--second_color)
+
+a
+    text-decoration: none
+    color: var(--prime_color)
+    &:hover
+        color: var(--prime_color_hover)
+
+.bold
+    font-weight: 800
+    font-variation-settings: "wght" 800
+.medium
+    font-weight: 600
+    font-variation-settings: "wght" 600
+.regular
+    font-weight: 500
+    font-variation-settings: "wght" 500
+.light
+    font-weight: 300
+    font-variation-settings: "wght" 300
+
+.router-link-active, .router-link-exact-active
+    color: var(--prime_color_hover)
