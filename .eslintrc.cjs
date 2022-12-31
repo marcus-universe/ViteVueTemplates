@@ -58,5 +58,11 @@ module.exports = {
     'vue/keyword-spacing': 'warn',
     'eslint-disable-next-line': 'off',
     'eslint-disable': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 }
